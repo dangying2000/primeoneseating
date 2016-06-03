@@ -1,0 +1,19 @@
+<div id="chart"></div>
+
+<script src="https://app.seats.io/chart.js"></script>
+<script>
+    new seatsio.SeatingChart({
+        divId: "chart",
+        publicKey: "7c529b83-8fca-4107-b7f4-e8fb86cdeb1c",
+        event: "22a20f3c-423a-409c-9b69-18b9e7ea6e08",
+        pricing: [
+                  {'category': 1, 'price': 50},
+                  {'category': 2, 'price': 40},
+                  {'category': 3, 'price': 30}
+              ],
+       priceFormatter: function(price) {
+                  return '$' + price;
+              }
+
+    }).render();
+</script>
